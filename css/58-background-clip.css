@@ -1,0 +1,23 @@
+div{
+    width: 304px;
+    height: 200px;
+    background-color: pink;
+    margin-bottom:10px;
+    background-image:url(../images/image_service_05.png) ;
+    border:15px solid rgba(255,255,0,0.5);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-origin: border-box;
+}
+
+.box2{
+    background-clip: border-box;
+}
+
+.box3{
+    background-clip: content-box;
+}
+
+.box4{
+    background-clip: padding-box;
+}

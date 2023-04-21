@@ -1,0 +1,19 @@
+/* quickWrap자식인 li 그 자식인 a 에 배경그림을 넣기  */
+
+.quickWrap>li>a{
+    display:block;
+    /* 인라인인 a는 너비와 높이를 사용할수 없다.  */
+    width:70px;
+    height:70px;
+    background-image:url(../images/icon_quickmenu.png);
+}
+
+.quickWrap>.quick2>a{
+    background-position-x:-70px;
+}
+.quickWrap>.quick3>a{
+    background-position-x:-140px;
+}
+.quickWrap>.quick4>a{
+    background-position-x:-210px;
+}

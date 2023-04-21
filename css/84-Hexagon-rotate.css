@@ -1,0 +1,30 @@
+.more{
+    margin:100px;
+    position: relative;
+}
+.more>.hexagon{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:80px;
+   
+}
+.more:hover>.hexagon{
+    opacity: 1;
+    animation-name:rotateAni ;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+@keyframes rotateAni{
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
+

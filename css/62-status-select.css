@@ -1,0 +1,30 @@
+input[type="radio"],
+input[type="checkbox"]{
+    display: none;
+}
+/* input type속성이 checkbox인 요소를 찾아서 그 바로 다음에 오는 label에 배경색을 핑크로*/
+input[type="checkbox"] + label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background:url(../images/icon_check.svg);
+    text-indent: -9999px;
+}
+input[type="checkbox"]:checked +label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_ckecked.svg);
+    text-indent: -9999px;
+}
+
+input[type="radio"] + label{
+    font-size: 30px;
+}
+input[type="radio"]:checked + label{
+    color: pink;
+}
+
+#myText:focus{
+    background: skyblue;
+}

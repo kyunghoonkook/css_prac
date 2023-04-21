@@ -1,0 +1,6 @@
+/* .menu의 자식으로 있는 li 그 자식으로 있는 a의 글자색 밑줄 */
+
+.menu>li>a{
+    color:pink;
+    text-decoration:none;
+}

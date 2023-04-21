@@ -1,0 +1,48 @@
+body{
+    background: #333;
+}
+h1{
+    width: 150px;
+    height: 50px;
+    border-radius: 60px;
+    border: 1px solid transparent;
+    text-align: center;
+    line-height: 50px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8fc800+0,6d9606+100 */
+background: rgb(143,200,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(143,200,0,1) 0%, rgba(109,150,6,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(143,200,0,1) 0%,rgba(109,150,6,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(143,200,0,1) 0%,rgba(109,150,6,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', endColorstr='#6d9606',GradientType=0 ); /* IE6-9 */
+color:rgb(68, 94, 5) ;
+font-size: 24px;
+box-shadow: 0px 1px 1px black;
+text-shadow: 0px 1px 1px black;
+}
+
+.button{
+    line-height: 1;
+    width: 150px;
+    height: 56px;
+    text-align: center;
+    border-radius: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b9d478+0,63831c+100 */
+background: rgb(185,212,120); /* Old browsers */
+background: -moz-linear-gradient(-30deg,  rgba(185,212,120,1) 0%, rgba(99,131,28,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-30deg,  rgba(185,212,120,1) 0%,rgba(99,131,28,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(150deg,  rgba(185,212,120,1) 0%,rgba(99,131,28,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d478', endColorstr='#63831c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+box-shadow:1px 1px 2px rgba(255,255,255,0.6) inset, 2px 2px 3px rgba(0,0,0,0.5);
+}
+strong{
+    display: block;
+    text-transform: uppercase;
+    color:#2d3d04;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    padding-top:10px;
+}
+span{
+    font-size: 12px;
+    color:#557117;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.2);
+}

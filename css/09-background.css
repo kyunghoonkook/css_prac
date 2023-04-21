@@ -1,0 +1,18 @@
+/* 문서에 배경색 넣기 */
+body{
+    /* background-color:wheat;
+    background-image: url(../images/enter.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-position-x:center;
+    background-position-y:center;
+    background-attachment:fixed; */
+
+    background:wheat url(../images/enter.png) no-repeat center center fixed;
+
+}
+/* h1에는 배경 그림 넣기 로고 */
+h1{
+    background-image:url(../images/h1_01.png);
+    background-repeat:no-repeat;
+}

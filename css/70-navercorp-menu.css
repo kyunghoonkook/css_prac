@@ -1,0 +1,30 @@
+
+.nav{
+    overflow: hidden;
+}
+.nav>li{
+    float: left;
+    margin: 10px 30px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.nav>li>a{
+    display: block;
+    padding-bottom: 10px;
+    position: relative;
+}
+.nav>li>a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1ec545;
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    transition: 0.5s;
+}
+
+.nav>li>a:hover::after{
+    width: calc(100% + 4px);
+}

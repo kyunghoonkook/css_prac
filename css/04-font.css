@@ -1,0 +1,63 @@
+/* 전체 선택자 글자색을 #333 */
+*{
+    color:#333;
+}
+
+/* 태그선택자
+body안에는 글씨체, 기본글자 크기, 글자 색상 */
+
+body{
+    font-family:"나눔고딕",sans-serif;
+    font-size:14px;
+}
+/* h2 가운데 정렬 */
+h2{
+    text-align:center;
+}
+
+.bold{
+    font-weight:700;
+}
+/* 클래스 text_right right, end 오른쪽 정렬 */
+.text_right{
+    text-align:end;
+}
+
+/* h3 글자색, 글자 크기 */
+h3{
+    color:darkblue;
+    font-size:x-large;
+}
+
+.big_text{
+    font-size:2.5em;
+    font-weight: bold;
+}
+
+/* 클래스 text 줄간격 2배로 */
+
+.text{
+    line-height:2;
+}
+
+/* .text2  자간 기울기 밑줄 */
+.text2{
+    letter-spacing:3px;
+    font-style:oblique;
+    /* text-decoration: underline; */
+    text-decoration-line:underline;
+    text-decoration-color:green;
+    text-decoration-style: dashed;
+    text-decoration-thickness:5px;
+}
+
+/* id_text 들여쓰기, 대소문자 */
+#id_text{
+    text-indent:-50px;
+    /* text-transform:uppercase; */
+    font-variant: small-caps;
+    word-spacing: 20px;
+}
+
+
+

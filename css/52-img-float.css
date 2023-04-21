@@ -1,0 +1,16 @@
+img{
+    margin: 20px;
+    float: left;
+}
+.text1{
+    background-color:hotpink;
+    margin-left: 100px;
+    float: left;
+
+}
+.text2{
+    background-color: seagreen;
+    margin-left:200px ;
+    float: left;
+    width: 300px;
+}

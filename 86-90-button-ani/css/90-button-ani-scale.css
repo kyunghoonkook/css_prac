@@ -1,0 +1,39 @@
+.button{
+    width: 150px;
+    padding: 20px 0;
+    border-radius: 30px;
+    background: #ddd;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.button strong{
+    display: block;
+    color: white;
+    mix-blend-mode:difference;
+}
+.button span{
+    display: block;
+    overflow: hidden;
+   position: relative;
+
+}
+
+.button::before{
+    content: "";
+    display: block;
+    background: black;
+    height: 200%;
+    width: 200%;
+    position: absolute;
+    top:0;
+    left:-20%;
+    transition:1s;
+    transform-origin: 0 0;
+    transform: rotate(-30deg);
+}
+.button:hover::before{
+    /* transform: scaleY(0); */
+    transform: translateX(100%) rotate(0deg);
+}

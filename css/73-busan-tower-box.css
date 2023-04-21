@@ -1,0 +1,67 @@
+.box>li{
+    width: 300px;
+    height: 400px;
+    float: left;
+    background-color:#ddd;
+    border: 1px solid dodgerblue;;
+    margin: 20px;
+    position: relative;
+    
+}
+
+/* .box>li ::before ::after 수평선 */
+/* box>li>a ::before ::after 수직선 */
+.box>li::before,
+.box>li::after,
+.box>li>a::before,
+.box>li>a::after{
+    content: "";
+    display: block;
+    background-color:dodgerblue;
+    position: absolute;
+    transition: 1s;
+}
+.box>li::before{
+    height: 1px;
+    width: 0%;
+    top: -1px;
+    left: 0;
+}
+
+.box>li::after{
+    height: 1px;
+    width: 0%;
+    bottom: -1px;
+    right: 0;
+}
+.box>li>a::before{
+    width: 1px;
+    height:0%;
+    left:-1px;
+    bottom: 0;
+}
+.box>li>a::after{
+    width: 1px;
+    height: 0%;
+    right: -1px;
+    top:0;
+}
+.box>li>a{
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    line-height: 400px;
+}
+.box>li:hover{
+    border:1px solid transparent;
+}
+.box>li:hover::before,
+.box>li:hover::after{
+    width: 100%;
+}
+.box>li:hover>a::before,
+.box>li:hover>a::after{
+    height: 100%;
+}

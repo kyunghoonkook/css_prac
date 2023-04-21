@@ -1,0 +1,14 @@
+/* foomMenu>li 뒤에 구분선넣기 */
+.footMenu>li::after{
+    /* content:"│";
+    margin:0 10px 5px 10px;
+    font-size:10px; */
+    content:"";
+    width:1px;
+    height:10px;
+    background:black;
+    display:block;
+}
+.footMenu>li:last-child::after{
+    display:none;
+}

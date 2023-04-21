@@ -1,0 +1,35 @@
+li{
+    list-style:none;
+}
+
+.menu>li>a{
+    background-image:url(../images/gnb_menu.png);
+    display:block;
+    width:60px;
+    height:50px;
+    text-indent:-9999px;
+}
+.menu>.menu1>a{
+    background-position:-70px 0;
+}
+.menu>.menu1>a:hover{
+    background-position:-140px 0;
+}
+.menu>.menu2>a{
+    background-position:-70px -60px;
+}
+.menu>.menu2>a:hover{
+    background-position:-140px -60px;
+}
+.menu>.menu3>a{
+    background-position:-70px -120px;
+}
+.menu>.menu3>a:hover{
+    background-position:-140px -120px;
+}
+.menu>.menu4>a{
+    background-position:-70px -180px;
+}
+.menu>.menu4>a:hover{
+    background-position:-140px -180px;
+}

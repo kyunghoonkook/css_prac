@@ -1,0 +1,12 @@
+/* 공통 사항으로 div 높이값 */
+div{
+    height:300px;
+    background-color:#eee;
+    font-size:60px;
+}
+/* 클래스 box2에 배경그림 */
+.box2{
+    background-image:url(../images/main_PC_1920x440_20201006040046969.jpg);
+    background-attachment:fixed;
+    background-position:center center;
+}

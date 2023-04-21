@@ -1,0 +1,53 @@
+/* 마우스 모양 변경하기 */
+.cursor1{
+    cursor:all-scroll;
+}
+.cursor2{
+    cursor:auto;
+}
+.cursor3{
+    cursor:cell;
+}
+.cursor4{
+    cursor:col-resize
+}
+.cursor5{
+    cursor:context-menu
+}
+.cursor6{
+    cursor:copy
+}
+.cursor7{
+    cursor: crosshair;
+}
+.cursor8{
+    cursor:e-resize;
+}
+.cursor9{
+    cursor: grab;
+}
+.cursor10{
+    cursor: grabbing;
+}
+.cursor11{
+    cursor: help;
+}
+.cursor12{
+    cursor: move;
+}
+.cursor13{
+    cursor: pointer;
+}
+.cursor14{
+    cursor: progress;
+}
+.cursor15{
+    cursor: zoom-in;
+}
+.cursor16{
+    cursor: zoom-out;
+}
+.cursor17{
+    cursor:url("../images/star.svg"),auto;
+}
+

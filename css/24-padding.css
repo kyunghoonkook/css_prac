@@ -1,0 +1,35 @@
+body,h1,h2,h3,h4,h5,h6,p,ul{
+    margin:0;
+    padding:0;
+}
+/* ul에는 padding과 margin값이 기본으로 적용되어있다. */
+li{
+    list-style:none;
+}
+
+div{
+    background-color: blanchedalmond;
+    border:2px solid black;
+    margin-bottom:20px;
+}
+span{
+    background-color: coral;
+}
+
+.box1{
+    padding-top:50px;
+}
+.box2{
+    padding:20px 50px;
+}
+.box3{
+    padding: 10px 100px 200px;
+}
+
+.box4{
+    padding:10px 20px 30px 40px;
+}
+
+span{
+    padding:50px;
+}

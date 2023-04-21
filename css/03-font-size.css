@@ -1,0 +1,28 @@
+/* 전체 선택자 글자크기의 기본을 20px  *선택자 또는 body 선택자에서 기준 크기를 정한다 */
+/* 기본 기준이 없으면 기본  16px */
+*{
+    font-size:20px;
+}
+.size2{
+    font-size:32px;
+}
+/* 기준을 기준으로 2em 2배 */
+.size3{
+    font-size:2em;
+}
+/* 소문자x를 기준으로 크기 */
+.size4{
+    font-size:3.5ex;
+}
+/*  */
+.size5{
+    font-size:2rem;
+}
+
+.size6{
+    font-size:200%;
+}
+
+
+
+

@@ -1,0 +1,36 @@
+body{
+    margin:0;
+}
+h1{
+    background-color: bisque;
+    margin:0;
+}
+div{
+    background-color:cornflowerblue;
+}
+p{
+    background-color:coral;
+}
+
+.box1{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+.box2{
+    /* 위 아래 50px 좌우 100px*/
+    margin:50px 100px;
+}
+
+/* 위 블럭요소와 아래 블럭요소에서 margin값을 줘서 겹칠경우 두 수중 큰수 하나만 적용
+box1의 마진 - bottom과 box2의 마진-top이 겹쳐서 50만 적용됨 */
+
+.box3{
+    margin:10px 50px 100px
+    /* 위 좌/우 아래 */
+}
+
+.box4{
+    margin:100px 20px 50px 100px
+    /* 위 오른쪽 아래쪽 왼쪽 */
+}

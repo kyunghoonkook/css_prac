@@ -1,0 +1,46 @@
+/* 모든 태그 기본 여백 제거 */
+body,h1,h2,p,ul,li{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+.sns>li{
+    display:inline-block;
+}
+
+.sns>li>a{
+    width:62px;
+    height:62px;
+    border:1px solid #c8bfb0;
+    display:block;
+    border-radius:50%;
+}
+
+.sns>li>a::before{
+    content:"";
+    display: block;
+    width:26px;
+    height:19px;
+    background-image:url(../images/icon_sns_l.png);
+    background-repeat:no-repeat;
+    margin:20px 18px;
+}
+
+.sns>li:nth-child(2)>a::before{
+    background-position-y:-19px;
+}
+
+.sns>li:nth-child(3)>a::before{
+    background-position-y:-37px;
+}
+
+.sns>li:nth-child(4)>a::before{
+    background-position-y:-57px;
+}
+.sns>li:last-child>a::before{
+    background-position-y: -73px;
+}

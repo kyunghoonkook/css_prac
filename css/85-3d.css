@@ -1,0 +1,44 @@
+.wrap{
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    text-align: center;
+    margin: 100px auto;
+    /* transform: rotate3d(1,1,0,-45deg); */
+    transform-style:preserve-3d ;
+    transition: 3s;
+}
+.wrap>div{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    position: absolute;
+}
+.box1{
+    background-color: coral;
+    transform: translate3d(0,0,100px);
+}
+.box2{
+    background-color: rgba(255,0,0,0.3);
+    transform: rotateY(90deg) translate3d(0,0,100px);
+}
+.box3{
+    background-color: rgba(0,255,0,0.3);
+    transform: rotateX(-90deg) translate3d(0,0,100px);
+}
+.box4{
+    background-color: rgba(0,0,255,0.5);
+    transform: rotateX(90deg) translate3d(0,0,100px);
+}
+.box5{
+    background-color: rgba(255,100,255,0.5);
+    transform: rotateY(-90deg) translate3d(0,0,100px);
+}
+.box6{
+    background-color: rgba(0,255,255,0.5);
+    transform: rotateY(180deg) translate3d(0,0,100px);
+}
+
+.wrap:hover{
+    transform: rotate3d(1,1,0,270deg);
+}

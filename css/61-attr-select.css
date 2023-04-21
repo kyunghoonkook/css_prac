@@ -1,0 +1,32 @@
+/* a중에 target 속성을 가지는 a를 찾아서 밑줄제거 글자크게 */
+a[target]{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* input중에 type의 값이 text인것만 찾아서 배경을 하늘색으로 */
+input[type="text"]{
+    background: skyblue;
+}
+input[type="button"]{
+    background: pink;
+    border: 1px solid #333;
+}
+input[type="radio"]{
+    background: green;
+}
+
+/* a의 href 속성값중에 http로 시작하는 요소만 찾아서 배경색주기 */
+a[href ^="http"]{
+    background: rgb(201, 241, 201);
+}
+/* a의 href속성값이 com로 끝나는요소 글작크기 50px 글자색 빨강 */
+a[href $="com"]{
+    font-size: 50px;
+    color: red;
+}
+/* a의 href속성값중에 ne를 포함하는 요소를 찾아서 테두리 */
+a{href *="he"}{
+    border: 1px solid black;
+}
+/* 포함하는거 특성 !+ * 독립된 단어를 찾을때/

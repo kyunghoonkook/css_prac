@@ -1,0 +1,54 @@
+.button{
+    width: 150px;
+    padding: 20px 0;
+    background: #ddd;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.button strong{
+    display: block;
+    color: white;
+    mix-blend-mode:difference;
+}
+.button span{
+    display: block;
+    overflow: hidden;
+   position: relative;
+
+}
+.button:hover strong{
+    animation: moveTextUp 0.3s,moveDownUp 0.3s 0.3s;
+}
+
+@keyframes moveTextUp{
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes moveDownUp{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.button::before{
+    content: "";
+    display: block;
+    background: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 100%;
+    transition: 0.3s;
+    transform-origin: 100% 0;
+}
+.button:hover::before{
+    left:0;
+}

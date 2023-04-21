@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+#wrap{
+    border:10px solid black;
+    background-color: burlywood;
+    width: 1200px;
+    margin: 0 auto;
+    /* 모든 자식이 float되면 부모는 사라진다.
+    그래서 아래에 있는 요소가 올라온다. */
+    /* 부모찾기 */
+    /* 1. height : 자식요소의 값이 변하면 나도 재계산*/
+    /* height: 250px; */
+    /* 2. 부모도 float을 준다 : 높이는 찾을 수 있으나,아래 요소가 올라옴 너비가 없는 경우는 내용물 만큼 너비가 잡힌다*/
+    /* float:left; */
+    /* 3. overflow를 준다 :  */
+    /* overflow: hidden; */
+    /* 4. ahter를 준다 */
+}
+
+
+.box1{
+    background-color: skyblue;
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+
+.box2{
+    background-color: plum;
+    width: 350px;
+    height: 200px;
+    float: left;
+}
+
+.box3{
+    background-color: greenyellow;
+    width: 250px;
+    height: 180px;
+    float: left;
+}
+
+.box4{
+    background-color: orange;
+    width: 200px;
+    height: 250px;
+    float: left;
+}
+
+
+#wrap::after{
+    content: "";
+    display: block;
+    clear: left;
+
+}

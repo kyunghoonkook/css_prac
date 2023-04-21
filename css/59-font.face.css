@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "subway_font";
+    src: url(../font/Subway-Footlong.woff) format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Subway_font";
+    src: url(../font/Subway-SixInch.woff) format("woff");
+    font-weight: 700;
+}
+
+h1{
+    font-size: 60px;
+    font-family: "Subway_font",sans-serif;
+    font-weight: 700;
+} 

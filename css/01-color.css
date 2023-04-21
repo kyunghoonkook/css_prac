@@ -1,0 +1,31 @@
+*{
+    /* 모든요소에 배경색주기 */
+    background-color:beige;
+}
+/* p 글자색을 gray */
+p{
+    color:gray;
+}
+/* 클래스 color2는 글자색을 빨강 16진수 */
+.color2{
+    color:#ff0000;
+}
+/* 클래스 color3 글자색 파랑 10진수 */
+.color3{
+    color:rgb(0,0,255)
+}
+
+/* 클래스 color 선택해서 10진수 파랑 투명도 50% */
+.color{
+    color:rgba(0,0,255,0.5);
+}
+
+/* 아이디 color6을 선택해서 글자색 하늘색 */
+#color6{
+    color:skyblue;
+}
+
+/* 클래스 color4 hsla   pink*/
+.color4{
+    color:hsla(307,71%,76%,1)
+}

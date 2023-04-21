@@ -1,0 +1,32 @@
+#wrap{
+    border:5px solid black;
+    width: 600px;
+}
+#wrap>div{
+    width: 10px;
+    height: 50px;
+    margin: 10px;
+    background: cornflowerblue;
+    transition-duration:6s ;
+}
+#wrap:hover>div{
+    /* 연산자 사이는 반드시 띄어주어야 함 */
+    width:calc(100% - 20px);
+}
+
+/* box2 같은 속도로 */
+#wrap>.box2{
+    transition-timing-function: linear;
+}
+#wrap>.box3{
+    transition-timing-function: ease-out;
+}
+#wrap>.box4{
+    transition-timing-function: ease-in-out;
+}
+#wrap>.box5{
+    transition-timing-function:steps(5)
+}
+#wrap>.box6{
+    transition-timing-function:cubic-bezier(.51,1.42,.73,1.44);
+}

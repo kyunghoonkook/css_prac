@@ -1,0 +1,29 @@
+p{
+    background-color: cornsilk;
+}
+div{
+    border:1px solid black;
+}
+/* p앞에 "before라는 글자를 가상으로 삽입하기 */
+p::before{
+    content:"before";
+    font-size:30px;
+    color:blue;
+}
+/* p뒤에 end라는 글자를 가상으로 넣기 */
+p::after{
+    content:"end";
+    font-size:50px;
+    background-color: pink;
+}
+
+
+/* div의 첫번째 글자를 선택하여 css */
+div::first-letter{
+    font-size:50px;
+}
+
+/* div의 첫번째 줄에 background */
+div::first-line{
+    background-color: skyblue;
+}

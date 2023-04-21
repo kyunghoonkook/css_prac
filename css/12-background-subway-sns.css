@@ -1,0 +1,33 @@
+li{
+    list-style:none;
+}
+
+
+.snsWrap>li>a{
+    display:block;
+    width:50px;
+    height:50px;
+    background-position:-50px 0;
+    text-indent:-9999px;
+}
+/* insta */
+.snsWrap>.sns1>a{  
+    background-image:url(../images/icon_sns_instar.png);   
+}
+
+/* insta에 마우스를 오버하면 배경그림의 위치가 0 0 */
+/* .snsWrap>.sns1>a:hover{
+    background-position:0 0;
+} */
+
+/* facebook */
+.snsWrap>.sns2>a{ 
+    background-image:url(../images/icon_sns_facebook.png);
+}
+/* .snsWrap>.sns2>a:hover{
+    background-position:0 0;
+} */
+
+.snsWrap>li>a:hover{
+    background-position:0 0;
+}

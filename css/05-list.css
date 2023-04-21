@@ -1,0 +1,18 @@
+/* 클래스 list의 자식인 li를 선택해서 장식모양 변경하기 */
+.list>li{
+    list-style-type:square;
+}
+
+/* 클래스 nav의 자식인 li를 선택해서 장식 제거하기 */
+.nav>li{
+    /* list-style-type:none; */
+    list-style: none;
+}
+
+/* 클래스 menu2의 자식인 li를 선택해서  */
+.menu2>li{
+    /* list-style-type:upper-roman; */
+    /* list-style-position:outside; */
+    list-style:upper-alpha   inside;
+}
+

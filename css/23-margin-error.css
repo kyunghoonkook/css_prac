@@ -1,0 +1,20 @@
+body,h1{
+    margin:0;
+}
+
+header{
+    border-top:5px solid #009223;
+}
+
+.center{
+    width:1200px;
+    background-color:blanchedalmond;
+    margin:0 auto;
+}
+.logo{
+    text-align: center;
+    padding:20px 0;
+}
+/* 블럭요소의 첫번째 자식요소에 margin-top을 적용하면 부모에게 적용된다, 이를 마진오류현상이라고 한다.
+해결방법1: padding을 준다.
+해결방법2: float명령어와 함께 사용한다. */

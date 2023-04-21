@@ -1,0 +1,23 @@
+#wrap{
+    width: 600px;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#wrap>div{
+    height: 200px;
+    border: 5px solid black;
+}
+.box1{
+    width: 250px;
+    order: 1;
+}
+.box2{
+    width: 500px;
+    order:3;
+}
+.box3{
+    width: 300px;
+    order: 2;
+}

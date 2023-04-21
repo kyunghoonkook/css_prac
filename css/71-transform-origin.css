@@ -1,0 +1,24 @@
+body{
+    padding: 100px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    border: 5px solid black;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+div:hover{
+    /* transform: scale(2); */
+    transform: rotate(180deg);
+}
+
+.box2{
+    transform-origin: right bottom;
+}
+
+.box3{
+    transform-origin: 100% 0 ;
+}

@@ -1,0 +1,40 @@
+#nav{
+    margin:100px 200px;
+}
+#nav>li{
+    float: left;
+    padding:0 20px;
+    position: relative;
+}
+
+#nav>li::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 20px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    /* 선의 위치를 항상 가운데 하는 방법 */
+    top:50%;
+    transform: translateY(-50%) skewX(-15deg);
+}
+#nav>li>a{
+    color: #333;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#nav>li>a::after{
+    content: "";
+    display: block;
+    width:50%;
+    height: 1px;
+    background: purple;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+#nav>li>a:hover::after{
+    width: 100%;
+}

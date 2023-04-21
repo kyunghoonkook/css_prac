@@ -1,0 +1,23 @@
+/* ul의 anchor link 하늘색, 마우스오버하면 초록색, 마우스를 다운하면 핑크, 마우스를 업하면 #555 */
+
+ul>li>a:link{
+    color:skyblue;
+}
+ul>li>a:hover{
+    color:green;
+}
+ul>li>a:active{
+    color:pink;
+}
+ul>li>a:visited{
+    color:#555;
+}
+
+/* ol은 기본 link, visited active를 같은 색으로, 마우스를 오버했을때 색이 변경되도록 */
+ol>li>a{
+    color:royalblue;
+}
+ol>li>a:hover{
+    color:salmon;
+}
+

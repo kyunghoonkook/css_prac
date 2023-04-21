@@ -1,0 +1,21 @@
+/* list의 첫번째 자식인 li를 선택하여 글자크기를 50px */
+
+.list>li:first-child{
+    font-size:50px;
+}
+/* list의 마지막 자식인 li를 찾아서 밑줄 */
+.list>li:last-child{
+    text-decoration:underline;
+}
+/* list의 세번째 자식인 li를 찾아서 대문자 바꾸기 */
+.list>li:nth-child(3){
+    text-transform:uppercase;
+}
+/* list의 홀수번째 자식에 배경색 skyblue  (2n+1)*/
+.list>li:nth-child(2n+1){
+    background-color:skyblue;
+}
+/* list의 짝수번째 자식인 li에 pink (2n) */
+.list>li:nth-child(2n){
+    background-color:pink;
+}

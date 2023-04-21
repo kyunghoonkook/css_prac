@@ -1,0 +1,66 @@
+.button{
+    background: #e7e7e7;
+    width: 190px;
+    padding: 15px 0;
+    position: relative;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+.button::after{
+    content: "";
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 0px solid transparent;
+    border-right: 20px solid #e7e7e7;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: 10%;
+    top:30px;
+    /* bottom: 0; */
+    transition: 0.2s;
+}
+.button:hover{
+    transform: translateY(-10%);
+}
+.button:hover::after{
+    border-top-width:20px ;
+    border-bottom-width:20px ;
+}
+.button>span{
+    display: block;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.button:hover strong{
+    display: block;
+    animation-name: textAni2;
+    animation-duration: 0.4s;
+}
+
+@keyframes textAni{
+    from{
+        transform: translateY(110%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes textAni2{
+    from{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-100%)
+    }
+    40.5%{
+        transform: translateY(100%)
+    }
+    60%{
+        transform: translateY(100%)
+    }
+    to{
+        transform: translateY(0);
+    }
+}

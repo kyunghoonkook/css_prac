@@ -1,0 +1,57 @@
+body,h1,h2,h3,p,ul,li,ol,dl,dt,dd{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+.noticeWrap{
+    width:493px;
+    height:220px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin:20px;
+    background:url(../images/KakaoTalk_20210421_142711855.png) no-repeat 30px center;
+    position:relative;
+    
+}
+
+.noticeWrap>.title{
+    font-size: 18px;
+    padding:25px 0 0 30px;
+    
+}
+
+.noticeWrap>.notice{
+    margin:30px 30px 0 150px;
+    background-color:pink;
+    font-size:13px;
+}
+.noticeWrap>.notice a{
+    display: inline-block;
+    width: 200px;
+    background-color:skyblue;
+    /* 말줄임 기호 만들기 한줄짜리 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.noticeWrap>.notice span{
+    margin-left: 40px;
+}
+
+.moreBtn>a{
+    display:block;
+    width: 30px;
+    height: 30px;
+    background: #999;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    position:absolute;
+    top:30px;
+    right:30px;
+}

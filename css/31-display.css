@@ -1,0 +1,49 @@
+body,h1,h2,h3,p,ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+
+/* inline 안에 li에 테두리선 넣기 */
+.inline{
+    text-align: center;
+}
+.inline>li{
+    border:1px solid black;
+    display:inline;
+    width:100px;
+}
+/* block>span을 block */
+
+.block>span{
+    border:1px solid blue;
+    display:block;
+    width:200px;
+    height:50px;
+}
+
+/* inBlock */
+.inBlock{
+    text-align:center;
+}
+.inBlock>li{
+    border:1px dashed #999;
+    display:inline-block;
+    width:200px;
+    height:60px;
+    text-align:center;
+    /* 1줄일때는 높이와 줄간격을 같게하면 가운데 정렬이 됨 */
+    line-height:60px;
+}
+.table>li{
+    display: table-cell;
+    border:1px solid green;
+    width:200px;
+    height:120px;
+    text-align:center;
+    vertical-align: middle;
+}

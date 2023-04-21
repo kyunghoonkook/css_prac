@@ -1,0 +1,40 @@
+/* bank1 테두리 주기 */
+.bank1{
+    border:1px solid #999;
+    border-radius:10px;
+    width:150px;
+    height: 150px;
+    text-align:center;
+    /* vertical-align:middle; */
+    /* 이미지(테이블의 셀)와 글자가 있는 경우, 이미지를 중심으로
+    글자를 위아래 가운데 정렬 이미지한테 주는 명령어 */
+    /* line-height:70px; 글자를 부모요소의 위아래 가우네 넣을때*/
+
+}
+
+.bank2>a{
+    display:block;
+    border:1px solid #999;
+    border-radius:10px;
+    width:150px;
+    height:150px;
+    background:url(../images/icon_event_slider_arr.png) no-repeat center center;
+}
+
+.more>a{
+    margin-top:15px;
+    display:block;
+    border:2px solid black;
+    border-radius:8px;
+    width:150px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    text-decoration:none;
+    color:black
+}
+.more>a:hover{
+    background:black;
+    color:white;
+    text-decoration:underline;
+}

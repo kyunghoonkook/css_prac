@@ -1,0 +1,9 @@
+/* h1바로 다음에 오는 h2를 선택하여 배경색 주기 */
+
+h1+h2{
+    background: pink;
+}
+/* .nextAll 이후에 오는 모든 p를 선택해서 밑줄주기 형제일 경우만 가능 */
+.nextAll ~ p{
+    text-decoration: underline;
+}

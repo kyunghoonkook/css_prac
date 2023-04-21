@@ -1,0 +1,24 @@
+div{
+    background:pink;
+    margin-bottom:50px;
+    width:200px;
+}
+
+/* box2 부모의 너비가 작아도 내용물 줄이변경되 않도록 막기 */
+.box2{
+    white-space: nowrap;
+}
+
+/* box3 마크한 그대로 보기 preview */
+.box3{
+    white-space: pre;
+}
+/* box4 공백은 입력한대로 엔터를 친곳도 입력한대로 부모의 너비는 적용되도록 */
+.box4{
+    white-space: pre-wrap;
+}
+
+/* box5 엔터만 적용되도록 공백은 무시 */
+.box5{
+    white-space: pre-line;
+}

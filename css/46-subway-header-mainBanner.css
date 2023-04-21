@@ -1,0 +1,225 @@
+/* 공통사항 */
+/* 모든 요소의 바깥여백 margin, 안쪽 여백 padding을 0으로 */
+
+body, h1, h2, h3, h4, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+/* li앞에 장식 제거하기 */
+li{
+    list-style: none;
+}
+/* a */
+a{
+    text-decoration: none;
+    color: #666;
+}
+/* body 글씨체, 기본글자크기, 줄간격, 메인컬러 */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+/* .blind 리더기를 통해서는 제목이 읽히지만, 디자인상에서는 안보이도록 */
+.blind{
+    position: absolute;
+    top:-9999px;
+}
+
+/* 사이트 */
+
+/* 1. header */
+header{
+    border-top: 5px solid #009223;
+    position: relative;
+    z-index: 1000;
+}
+
+header>.center{
+    width:1170px;
+    background-color: rgba(255, 0, 0, 0.3);
+    margin: 0 auto;
+    position: relative;
+    }
+
+header .logo{
+    text-align: center;
+    /* margin-top:35px; 첫번째 요소인 블럭에 마진 탑을 주면 부모가 떨어진다. */
+    padding-top: 35px;
+}
+.gnb{
+    background-color: skyblue;
+    position: absolute;
+    /* 부모요소를 기준으로 위치를 잡겠다~ 공중 부양하면서 아래에 있는 메인 메뉴가 딸려서 올라온다. */
+    /* 부모요소에는 positon이 있어야된다. 없으면 body까지 올라간다. */
+    top: 50px;
+    right: 0;
+}
+
+.gnb>li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.gnb>li:first-child{
+    position: relative;
+    padding-right: 15px;
+}
+.gnb>li:first-child::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.gnb>li>a{
+    display: block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+}
+.gnb>li:nth-child(3)>a{
+    width: 30px;
+    background: url(../images/icon_utill_global.png);
+    text-indent: -9999px;
+    /* 모니터 왼쪽 밖으로 있어서 리더기를 통해서 읽혀짐 , 블럭이기 떄문에 들여쓰기 가능 */
+}
+
+/* nav */
+.sub{
+    display: none;
+}
+#nav{
+    text-align: center;
+    padding: 30px 0 20px;
+    /* background-color: red; */
+}
+#nav>li{
+    display: inline-block;
+    width: 165px;
+    position: relative;
+}
+#nav>li>a{
+    color: #292929;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+#nav>li:hover>a{
+    color: #009223;
+}
+
+/* 서브메뉴 보기 */
+.sub{
+    display: none;
+    width: 100%;
+    position: absolute;
+    background: white;
+    padding: 50px 0 30px;
+    line-height: 2;
+    height: 200px;
+    z-index: 100;
+    top:47px;
+}
+.sub>li>a:hover{
+    color: #009223;
+    text-decoration: underline;
+}
+#nav:hover .sub{
+    display: block;
+}
+#nav:hover::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 280px;
+    background: white;
+    position: absolute;
+    top:160px;
+    border-top: 1px solid #ccc;
+}
+
+/* 2. .mainbanner */
+.mainbanner{
+    height:440px;
+    overflow: hidden;
+    position: relative;
+}
+.banner{
+    width: 400%;
+    height:100%;
+}
+
+/* 부모의 1/4 너비 */
+.banner>li{
+    width: 25%;
+    height:100%;
+    float: left;
+}
+
+.banner>li>a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position-x:center ;
+}
+.banner>.b1>a{
+    background-image: url(../images/main_PC_1920x440_20201006040046969.jpg);
+}
+.banner>.b2>a{
+    background-image: url(../images/main_PC_1920x440_20210205043330107.jpg);
+}
+
+.banner>.b3>a{
+    background-image: url(../images/main_PC_1920x440_20210302111138000.png);
+}
+.banner>.b4>a{
+    background-image: url(../images/main_PC_1920x440_20210302111248934.png);
+}
+
+.mainbanner>.center{
+    width: 1170px;
+    /* margin: 0 auto; */
+    background-color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -585px;
+}
+.mainbanner .pager{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mainbanner .pager>li{
+    display:inline-block;
+    margin:0 5px;
+}
+.mainbanner .pager>li>a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 30px;
+    text-indent: -9999px;
+}
+.mainbanner .pager>.active>a{
+    width: 30px;
+    background-color: #ffc300;
+}
+/* 3. #cointainer */
+
+#container>.center{
+    width: 1170px;
+    margin: 0 auto;
+    background-color:rgba(255, 0, 0, 0.3);
+    position: relative;
+    top: -30px;
+}
+
+
+/* 4. footer */

@@ -1,0 +1,57 @@
+body,h1,h2,h3,p,ul,li,ol{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+.noticeData{
+    width: 1200px;
+    background-color:bisque;
+    margin:0 auto;
+}
+
+.blind{
+    position: absolute;
+    top:-9999px;
+}
+
+.noticeData>div{
+    width: 493px;
+    height: 222px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    position: relative;
+}
+.noticeData>div>.title{
+    margin: 25px 0 0 30px;
+}
+.noticeData>div>ul{
+    margin: 30px 30px 0 150px;
+}
+.noticeData>div li{
+    background-color: cornflowerblue;
+    margin-bottom:5px ;
+    position: relative;
+}
+.noticeData>div li a{
+    display: block;
+    width: 200px;
+    background-color: pink;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.noticeData>div span{
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.moreBtn{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+   
+}

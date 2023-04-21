@@ -1,0 +1,49 @@
+/* 홈페이지 공통사항 */
+body,h1,h2,p,ul,li,ol,dl,dt,dd{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:#454545;
+}
+
+body{
+    font-family:NanumBarunGothic,"나눔바른고딕","malgun Gothic",sans-serif;
+    font-size:1em;
+    color:#454545;
+}
+#nav{
+    width:300px;
+    border-top:2px solid #293ba8;
+}
+#nav>li{
+    line-height: 60px;
+    border-bottom:1px solid #e5e5e5;
+    
+}
+#nav>li>a{
+    line-height:60px;
+    text-indent:20px;
+    display:block;
+}
+.sub{
+    display:none;
+    background:pink;
+    margin:0 20px;
+}
+/* 
+#nav>li>a:hover + .sub{
+    display:block;
+    
+} */
+/* sub영역또한 li의 영역이기 때문에 hover시 영역이 남아있음 */
+
+#nav>li:hover .sub{
+    display: block;
+}

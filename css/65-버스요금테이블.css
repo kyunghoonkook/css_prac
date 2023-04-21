@@ -1,0 +1,33 @@
+table,th,td{
+    border-collapse: collapse;
+}
+table{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+}
+
+th{
+    border:1px solid #459dec;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    color:white;
+    background: rgb(61, 128, 214);
+}
+
+td{
+    border:1px solid #459dec;
+}
+
+table td:first-child{
+    border-left: none;
+}
+table td:last-child{
+    border-right: none;
+}
+
+.bold{
+    font-size: 18px;
+    font-weight: bold;
+}

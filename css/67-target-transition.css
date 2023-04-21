@@ -1,0 +1,28 @@
+body,h1,ul,li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+.btn{
+    overflow: hidden;
+}
+.btn>li{
+    float: left;
+    margin:10px
+}
+
+.banner>li{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin: 10px;
+    float: left;
+    transition-duration: 0.5s;
+}
+.banner>li:target{
+    width: 200px;
+    background-color: hotpink;
+}

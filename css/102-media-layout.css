@@ -1,0 +1,77 @@
+/* pc */
+.center{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255,0,0,0.3);
+    position: relative;
+}
+/* 1.pc 에서 사라진 요소를 제거하기 */
+.hamBtn{
+    display: none;
+}
+
+/* header */
+header{
+    background:#efefef;
+    padding-bottom:50px;
+}
+.logo{
+    float: left;
+    margin-top: 20px;
+}
+.gnb{
+    float: right;
+}
+.gnb>li{
+    float: left;
+    margin-left: 15px;
+}
+nav{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+#nav>li{
+    float: left;
+    margin-left: 80px;
+    font-size:19px;
+}
+/* #mainBanner */
+#mainBanner{
+    height: 400px;
+    background:coral;
+}
+
+/* #container */
+.con1{}
+.con1>div{
+    height: 200px;
+}
+.con1>.box1{
+    width: 25%;
+    background: green;
+}
+.con1>.box2{
+    width: 50%;
+    background: cornflowerblue;
+}
+.con1>.box3{
+    width: 25%;
+    background: cornsilk;
+}
+
+.con2{
+
+}
+.con2>div{
+    width: 48%;
+    height: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* footer */
+footer{
+    background: #333;
+    line-height: 100px;
+}

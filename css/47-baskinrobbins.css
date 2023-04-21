@@ -1,0 +1,93 @@
+body,h1,h2,h3,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#4a3d39;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#4a3d39;
+}
+
+/* 1 header */
+header{
+    border-top:3px solid #ff7c98;
+}
+
+header>.center{
+    width: 1200px;
+    /* background-color: skyblue; */
+    margin: 0 auto;
+    position: relative;
+
+}
+
+header .logo{
+    text-align:center;
+    padding: 30px;
+}
+
+.gnb1{
+    /* background-color: pink; */
+    position: absolute;
+    top:60px;
+    left:0;
+}
+
+.gnb1>li{
+    display:inline-block;
+    margin-right: 10px;
+}
+
+
+.gnb1>li:first-child{
+    position: relative;
+}
+
+.gnb2{
+    /* background-color: teal; */
+    position: absolute;
+    top:60px;
+    right: 0px;
+}
+
+.gnb2>li{
+    display:inline-block;
+    padding-right: 10px;
+}
+
+.gnb2>li>a{
+    display: block;
+    font-size: 11px;
+    height: 54px;
+    line-height: 54px;
+    letter-spacing: -0.05em;
+}
+
+.gnb2>li:last-child>a{
+    width: 54px;
+    background-image: url(../images/icon_search.png);
+    text-indent: -9999px;
+}
+
+/* nav */
+
+#nav{
+    text-align: center;
+}
+
+#nav>li{
+    display:inline-block;
+    width: 164px;
+}
+#nav>li>a{
+    color:#483834;
+    font-size:13px;
+    font-weight: 600;
+}
