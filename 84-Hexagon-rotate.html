@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/84-Hexagon-rotate.css">
+    <style>
+        .more1{
+            background-color: #ddd;
+           
+        }
+        .more1>a{
+            display: block;
+            line-height: 48px;
+            font-size:13px;
+            color:#333;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .more1>a>span{
+            float: left;
+            margin-right: 10px;
+            
+        }
+        .more1>a>div{
+            float: left;
+            position: relative;
+            padding-right: 20px;
+        }
+        .more1>a .arrow{
+            position: relative;
+            z-index: 10;
+            /* background-color: pink; */
+        }
+        .more1>a .hexagon{
+            position: absolute;
+            right: 0;
+            /* background-color: pink; */
+        }
+        .more1>a .hexagon>img{
+            opacity: 0;
+        }
+        .more1>a:hover .hexagon>img{
+            transition: 2s;
+            opacity: 1;
+            animation-name: hexaAni;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes hexaAni{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg) ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="more">
+        <span>VIEW MORE</span>
+        <span><img src="images/iconmonstr-arrow-right-thin-48.png" alt=""></span>
+        <div class="hexagon"><img src="images/iconmonstr-shape-23-48.png" alt=""></div>
+    </div>
+
+    <div class="more1">
+        <a href="#">
+            <span>view more</span>
+            <div class="heArrow">
+                <span class="arrow"><img src="images/iconmonstr-arrow-right-thin-48.png" alt=""></span>
+                <span class="hexagon"><img src="images/iconmonstr-shape-23-48.png" alt=""></span>
+
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
